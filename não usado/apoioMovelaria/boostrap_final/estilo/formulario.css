@@ -1,0 +1,42 @@
+/* Formulário */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.area{
+    width: 100%;
+    max-width: 360px;
+    height: 300px;
+    text-align: center;
+    padding: 10px;
+}
+
+.botao1{
+    margin-bottom: 15px;
+}
+
+.logo{
+    width: 100%;
+    height: auto;
+}
+
+.remember{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.gray{
+    color: #999999;
+}
+
+.padding{
+    padding: 20px;
+}

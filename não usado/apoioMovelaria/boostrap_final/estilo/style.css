@@ -1,0 +1,75 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.carousel-inner img{
+    width: 100vw;
+    height: 75vh;
+}
+
+.imagem-logo{
+    width: 120px;
+}
+
+.texto-carousel h3{
+    font-size: 55px;
+}
+
+.botao-top{
+    position: fixed;
+    bottom: 7vh;
+    right: 2vw;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    border-radius: 100%;
+    display: none;
+    z-index: 1;
+    padding: 0;
+}
+
+.imagem-botao{
+    width: 40px;
+}
+
+.rodape{
+    background-color: rgb(194, 199, 207);
+    padding-bottom: 1vh;
+    text-align: center;
+}
+
+.rodape p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.lista-redes{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.lista-redes img{
+    margin: 15px;
+    width: 50px;
+}
+
+.lista-rodape{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.lista-rodape li{
+    margin: 1vw;
+}
+
+
+@media(max-width: 768px){
+    .carousel-inner img{
+        height: 62vh;
+    }
+}
