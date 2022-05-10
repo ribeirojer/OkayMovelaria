@@ -183,6 +183,15 @@ div.stars {
     flex-direction: column;
     justify-content: center;
 }
+.etica p {
+    padding: 0 6px;
+}
+#pvissao {
+    padding: 0 22px;
+}
+#pvalores {
+    padding: 0 24px;
+}
 
 /* footer */
 
@@ -206,6 +215,9 @@ footer i {
 }
 footer span {
     padding: 10px;
+}
+#logookayrodape {
+    filter: invert(1);
 }
 @media (max-width: 600px) {
     header div {
