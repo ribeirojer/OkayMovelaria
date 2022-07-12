@@ -83,6 +83,9 @@ main div {
     display: flex;
     justify-content: center;
 }
+main div a {
+    margin: 1rem;
+}
 form {
     font-size: 1rem;
     background-color: #456979;
@@ -96,7 +99,6 @@ form p {
     display: flex;
     justify-content: center;
 }
-
 input, textarea {
     width: 200px;
     padding: 10px;
@@ -143,6 +145,12 @@ footer {
     align-items: center;
     padding: 10px;
 }
+footer #logoCentral img {
+    filter: invert(1);
+}
+.entreemcontato {
+    display: none;
+}
 footer .enderecos {
     display: flex;
     flex-direction: column;
@@ -155,7 +163,27 @@ footer i {
 footer span {
     padding: 10px;
 }
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+    header nav a {
+        font-size: 1rem;
+    }
+    .menu {
+        align-items: center;
+    }
+    footer {
+        flex-wrap: nowrap;
+    }
+    .enderecos label {
+        display: none;
+    }
+    .enderecos {
+        font-size: 0.9rem;
+    }
+    footer span {
+        padding: 0;
+    }
+}
+@media (max-width: 425px) {
     header div {
         display: flex;
         flex-wrap: wrap;
@@ -197,10 +225,8 @@ footer span {
     /* footer */
 
     footer {
-        justify-content: center;
-        padding: 1rem;
-        position: absolute;
-        bottom: 0;
+        flex-direction: column;
+        width: 100%;
     }
     footer #logoCentral img {
         margin: 0px;
@@ -212,6 +238,10 @@ footer span {
     }
     footer p {
         margin-top: 1rem;
+        font-size: 0.8rem;
+    }
+    .entreemcontato {
+        display: block;
     }
     footer p:last-child {
         margin-bottom: 1rem;

@@ -114,6 +114,12 @@ footer {
     position: absolute;
     bottom: 0;
 }
+.entreemcontato {
+    display: none;
+}
+footer #logoCentral img {
+    filter: invert(1);
+}
 footer .enderecos {
     display: flex;
     flex-direction: column;
@@ -127,7 +133,28 @@ footer span {
     padding: 10px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1023px) {
+    header nav a {
+        font-size: 0.9rem;
+    }
+    .menu {
+        align-items: center;
+    }
+    footer {
+        position: unset;
+        flex-wrap: nowrap;
+    }
+    .enderecos label {
+        display: none;
+    }
+    .enderecos {
+        font-size: 0.9rem;
+    }
+    footer span {
+        padding: 0;
+    }
+}
+@media (max-width: 425px) {
     header div {
         display: flex;
         flex-wrap: wrap;
@@ -138,7 +165,8 @@ footer span {
     }
     #terceiradivdoheader {
         margin: 0.5rem;
-    }
+        justify-content: center;
+    }    
     .menu {
         display: flex;
         align-content: center;
@@ -163,10 +191,13 @@ footer span {
         justify-content: center;
         padding: 1rem;
         position: static;
+        flex-wrap: wrap;
+    }
+    .entreemcontato {
+        display: block;
     }
     footer #logoCentral img {
         margin: 0px;
-        filter: invert(1);
     }
     footer .enderecos {
         color: #FCDDBC;
@@ -174,6 +205,7 @@ footer span {
     }
     footer p {
         margin-top: 1rem;
+        font-size: 0.8rem;
     }
     footer p:last-child {
         margin-bottom: 1rem;
