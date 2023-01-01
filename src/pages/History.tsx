@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import image from "../assets/woman.png";
+import image1 from "../assets/logo-okay-final.png";
+import image2 from "../assets/1646337551647.jpg";
 
 type Props = {};
 
@@ -119,7 +120,7 @@ const History = (props: Props) => {
   return (
     <Wrapper className="flex">
       <div>
-        <img src="images/logo-okay-final.png" alt="logo-okay" />
+        <img src={image1} alt="logo-okay" />
         <div className="paragrafos">
           <p>
             A Okay Movelaria nasceu em 2019, na cidade de São José dos
@@ -135,7 +136,7 @@ const History = (props: Props) => {
         </div>
       </div>
       <div>
-        <img id="eliana" src="images/1646337551647.jpg" alt="imagem-eliana" />
+        <img id="eliana" src={image2} alt="imagem-eliana" />
         <p>
           Eliana Aparecida Ribeiro é formada pelo Centro Universitário Senac em
           Design de Interiores. Possui experiência de mais de 10 anos na área,

@@ -1,24 +1,26 @@
 import styled from "styled-components";
-import image from "../assets/woman.png";
+import image1 from "../assets/whatsapp-50x50.png";
+import image2 from "../assets/instagram-50x50.png";
+import image3 from "../assets/facebook2-50x50.png";
 
 type Props = {};
 
 const Wrapper = styled.main`
-  h1 {
-    color: #456979;
-    display: flex;
-    justify-content: center;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0;
+  h1,
   h2 {
     color: #456979;
+  }
+  div {
     display: flex;
     justify-content: center;
   }
-  main div {
-    display: flex;
-    justify-content: center;
-  }
-  main div a {
+  div a {
     margin: 1rem;
   }
   form {
@@ -184,7 +186,7 @@ const Orcamento = (props: Props) => {
           rel="external"
           href="https://api.whatsapp.com/send?phone=5512981694974&text=Olá,%20meu%20amigo!"
         >
-          <img src="images/whatsapp-50x50.png" alt="logo Whatsapp" />
+          <img src={image1} alt="logo Whatsapp" />
         </a>
         <a
           className="instagramnomain"
@@ -192,14 +194,14 @@ const Orcamento = (props: Props) => {
           rel="external"
           href="https://www.instagram.com/okay.movelaria/"
         >
-          <img src="images/instagram-50x50.png" alt="logo Instagram" />
+          <img src={image2} alt="logo Instagram" />
         </a>
         <a
           target="_blank"
           rel="external"
           href="https://www.facebook.com/okaymovelaria.com.br"
         >
-          <img src="images/facebook2-50x50.png" alt="logo Facebook" />
+          <img src={image3} alt="logo Facebook" />
         </a>
       </div>
       <h2 id="segundoh2">Se preferir nos mande um E-mail</h2>
