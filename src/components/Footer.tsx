@@ -1,5 +1,8 @@
 import styled from "styled-components";
-import image from "../assets/woman.png";
+import LogoOkay from "../assets/logo-okay-final-112x72.png";
+import image1 from "../assets/whatsapp-50x50.png";
+import image2 from "../assets/instagram-50x50.png";
+import image3 from "../assets/facebook2-50x50.png";
 
 type Props = {};
 
@@ -38,7 +41,7 @@ const Footer = (props: Props) => {
       <div id="logookayrodape">
         <a id="logoCentral" href="index.html">
           <img
-            src="images/logo-okay-final-112x72.png"
+            src={LogoOkay}
             alt="logo da okay movelaria"
           />
         </a>
@@ -63,7 +66,7 @@ const Footer = (props: Props) => {
             rel="external"
             href="https://api.whatsapp.com/send?phone=5512981694974&text=Olá,%20gostaria%20de%20fazer%20um%20orçamento"
           >
-            <img src="images/whatsapp-50x50.png" alt="logo Whatsapp" />
+            <img src={image1} alt="logo Whatsapp" />
           </a>
         </span>
         <span>
@@ -72,7 +75,7 @@ const Footer = (props: Props) => {
             rel="external"
             href="https://www.instagram.com/okay.movelaria/"
           >
-            <img src="images/instagram-50x50.png" alt="logo Instagram" />
+            <img src={image2} alt="logo Instagram" />
           </a>
         </span>
         <span>
@@ -81,7 +84,7 @@ const Footer = (props: Props) => {
             rel="external"
             href="https://www.facebook.com/okaymovelaria.com.br"
           >
-            <img src="images/facebook2-50x50.png" alt="logo Facebook" />
+            <img src={image3} alt="logo Facebook" />
           </a>
         </span>
       </div>

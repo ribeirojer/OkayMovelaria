@@ -1,5 +1,9 @@
 import styled from "styled-components";
-import image from "../assets/woman.png";
+import LogoWhatsapp from "../assets/whatsapp-35x35.png";
+import LogoFacebook from "../assets/facebook2-35x35.png";
+import LogoInstagram from "../assets/instagram-35x35.png";
+import LogoOkay from "../assets/logo-okay-final-112x72.png";
+import { Link } from "react-router-dom";
 
 type Props = {};
 
@@ -74,43 +78,40 @@ const Header = (props: Props) => {
             rel="external"
             href="https://api.whatsapp.com/send?phone=5512981694974&text=Olá,%20gostaria%20de%20fazer%20um%20orçamento"
           >
-            <img src="images/whatsapp-35x35.png" alt="logo Whatsapp" />
+            <img src={LogoWhatsapp} alt="logo Whatsapp" />
           </a>
           <a
             target="_blank"
             rel="external"
             href="https://www.facebook.com/okaymovelaria.com.br"
           >
-            <img src="images/facebook2-35x35.png" alt="logo Facebook" />
+            <img src={LogoFacebook} alt="logo Facebook" />
           </a>
           <a
             target="_blank"
             rel="external"
             href="https://www.instagram.com/okay.movelaria/"
           >
-            <img src="images/instagram-35x35.png" alt="logo Instagram" />
+            <img src={LogoInstagram} alt="logo Instagram" />
           </a>
         </div>
       </div>
       <div>
-        <a id="logoCentral" href="index.html">
-          <img
-            src="images/logo-okay-final-112x72.png"
-            alt="logo da okay movelaria"
-          />
-        </a>
+        <Link to={"/"} id="logoCentral">
+          <img src={LogoOkay} alt="logo da okay movelaria" />
+        </Link>
       </div>
       <div id="terceiradivdoheader">
         <nav>
           <ul className="menu">
             <li>
-              <a href="historia.html">Nossa História</a>
+              <Link to={"historia"}>Nossa História</Link>
             </li>
             <li>
-              <a href="projetos.html">Projetos</a>
+              <Link to={"projetos"}>Projetos</Link>
             </li>
             <li>
-              <a href="orcamento.html">Orçamento</a>
+              <Link to={"orcamento"}>Orçamento</Link>
             </li>
           </ul>
         </nav>
