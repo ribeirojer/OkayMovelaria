@@ -8,32 +8,26 @@ import image5 from "../assets/pexels-vidal-balielo-jr-11296126-1600x800.jpg";
 import image6 from "../assets/pexels-vidal-balielo-jr-11296133-1600x800.jpg";
 import image7 from "../assets/pexels-vidal-balielo-jr-11296134-1600x800.jpg";
 
+import { CSSTransition, TransitionGroup } from "react-transition-group";
+
 import image8 from "../assets/stephanie-liverani-Zz5LQe-VSMY-unsplash2.jpg";
 import image9 from "../assets/christopher-campbell-rDEOVtE7vOs-unsplash.jpg";
 import image10 from "../assets/jonas-kakaroto-mjRwhvqEC0U-unsplash.jpg";
+import { useEffect, useState } from "react";
 
 type Props = {};
 
 const Wrapper = styled.main`
-  .container {
-    display: flex;
-    justify-content: center;
-  }
   #slider {
     width: 100%;
     height: 35vw;
     position: relative;
   }
   #slider img {
-    opacity: 0;
     position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: opacity 800ms;
-  }
-  #slider img.selected {
-    opacity: 1;
   }
 
   /* Orçar */
@@ -139,6 +133,23 @@ const Wrapper = styled.main`
   }
   #pvalores {
     padding: 0 24px;
+  }
+  .slide-enter {
+    transform: translateX(100%);
+  }
+
+  .slide-enter-active {
+    transform: translateX(0%);
+    transition: transform 500ms ease;
+  }
+
+  .slide-exit {
+    transform: translateX(0%);
+  }
+
+  .slide-exit-active {
+    transform: translateX(-100%);
+    transition: transform 500ms ease;
   }
 
   @media (max-width: 980px) {
@@ -274,19 +285,46 @@ const Wrapper = styled.main`
 `;
 
 const Home = (props: Props) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const items = [
+    { image: image1 },
+    { image: image2 },
+    { image: image3 },
+    { image: image4 },
+    { image: image5 },
+    { image: image6 },
+    { image: image7 },
+  ];
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % items.length);
+    }, 4000);
+
+    return () => clearInterval(intervalId);
+  }, [items]);
+
+  const goToPrevSlide = () => {
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 1 + items.length) % items.length
+    );
+  };
+
+  const goToNextSlide = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % items.length);
+  };
+
+  const currentItem = items[currentIndex];
   return (
     <Wrapper>
-      <section className="container">
-        <div id="slider">
-          <img className="selected" src={image1} alt="Image1" />
-          <img src={image2} alt="Image2" />
-          <img src={image3} alt="Image3" />
-          <img src={image4} alt="Image4" />
-          <img src={image5} alt="Image5" />
-          <img src={image6} alt="Image6" />
-          <img src={image7} alt="Image7" />
-        </div>
-      </section>
+      <div id="slider">
+        {/*<button onClick={goToPrevSlide}>Anterior</button>*/}
+        <TransitionGroup>
+          <CSSTransition key={currentIndex} timeout={500} classNames="slide">
+            <img src={currentItem.image} alt="Image1" />
+          </CSSTransition>
+        </TransitionGroup>
+        {/*<button onClick={goToNextSlide}>Próximo</button>*/}
+      </div>
 
       <section id="orcar">
         <p>Deseja fazer um orçamento sem compromisso?</p>
