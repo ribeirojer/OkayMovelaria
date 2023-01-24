@@ -1,39 +1,10 @@
-import styled from "styled-components";
 import LogoOkay from "../assets/logo-okay-final-112x72.png";
 import image1 from "../assets/whatsapp-50x50.png";
 import image2 from "../assets/instagram-50x50.png";
 import image3 from "../assets/facebook2-50x50.png";
+import { Wrapper } from "./Footer";
 
 type Props = {};
-
-const Wrapper = styled.footer`
-  color: #ffffff;
-  background-color: #456979;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-
-  .enderecos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  i {
-    color: #ef959d;
-  }
-  span {
-    padding: 10px;
-  }
-  #logookayrodape {
-    filter: invert(1);
-  }
-  .entreemcontato {
-    display: none;
-  }
-`;
 
 const Footer = (props: Props) => {
   return (
