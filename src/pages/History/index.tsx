@@ -1,5 +1,5 @@
-import image1 from "../assets/logo-okay-final.png";
-import image2 from "../assets/1646337551647.jpg";
+import image1 from "../../assets/logo-okay-final.png";
+import image2 from "../../assets/1646337551647.jpg";
 import { Wrapper } from "./History";
 
 type Props = {};

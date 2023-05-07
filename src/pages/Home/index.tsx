@@ -1,17 +1,17 @@
 import { Link } from "react-router-dom";
-import image1 from "../assets/pexels-max-vakhtbovych-7166929-1600x800.jpg";
-import image2 from "../assets/pexels-max-vakhtbovych-7166931-1600x800.jpg";
-import image3 from "../assets/pexels-nguyễn-quang-9877452-1600x800.jpg";
-import image4 from "../assets/pexels-nguyễn-quang-9877453-1600x800.jpg";
-import image5 from "../assets/pexels-vidal-balielo-jr-11296126-1600x800.jpg";
-import image6 from "../assets/pexels-vidal-balielo-jr-11296133-1600x800.jpg";
-import image7 from "../assets/pexels-vidal-balielo-jr-11296134-1600x800.jpg";
+import image1 from "../../assets/pexels-max-vakhtbovych-7166929-1600x800.jpg";
+import image2 from "../../assets/pexels-max-vakhtbovych-7166931-1600x800.jpg";
+import image3 from "../../assets/pexels-nguyễn-quang-9877452-1600x800.jpg";
+import image4 from "../../assets/pexels-nguyễn-quang-9877453-1600x800.jpg";
+import image5 from "../../assets/pexels-vidal-balielo-jr-11296126-1600x800.jpg";
+import image6 from "../../assets/pexels-vidal-balielo-jr-11296133-1600x800.jpg";
+import image7 from "../../assets/pexels-vidal-balielo-jr-11296134-1600x800.jpg";
 
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 
-import image8 from "../assets/stephanie-liverani-Zz5LQe-VSMY-unsplash2.jpg";
-import image9 from "../assets/christopher-campbell-rDEOVtE7vOs-unsplash.jpg";
-import image10 from "../assets/jonas-kakaroto-mjRwhvqEC0U-unsplash.jpg";
+import image8 from "../../assets/stephanie-liverani-Zz5LQe-VSMY-unsplash2.jpg";
+import image9 from "../../assets/christopher-campbell-rDEOVtE7vOs-unsplash.jpg";
+import image10 from "../../assets/jonas-kakaroto-mjRwhvqEC0U-unsplash.jpg";
 import { useEffect, useState } from "react";
 import { Wrapper } from "./Home";
 

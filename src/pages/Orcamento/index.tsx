@@ -1,6 +1,6 @@
-import image1 from "../assets/whatsapp-50x50.png";
-import image2 from "../assets/instagram-50x50.png";
-import image3 from "../assets/facebook2-50x50.png";
+import image1 from "../../assets/whatsapp-50x50.png";
+import image2 from "../../assets/instagram-50x50.png";
+import image3 from "../../assets/facebook2-50x50.png";
 import { Wrapper } from "./Orcamento";
 
 type Props = {};

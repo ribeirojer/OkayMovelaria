@@ -1,7 +1,7 @@
-import LogoWhatsapp from "../assets/whatsapp-35x35.png";
-import LogoFacebook from "../assets/facebook2-35x35.png";
-import LogoInstagram from "../assets/instagram-35x35.png";
-import LogoOkay from "../assets/logo-okay-final-112x72.png";
+import LogoWhatsapp from "../../assets/whatsapp-35x35.png";
+import LogoFacebook from "../../assets/facebook2-35x35.png";
+import LogoInstagram from "../../assets/instagram-35x35.png";
+import LogoOkay from "../../assets/logo-okay-final-112x72.png";
 import { Link } from "react-router-dom";
 import { Wrapper } from "./Header";
 

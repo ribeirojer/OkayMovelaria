@@ -58,4 +58,26 @@ export const Wrapper = styled.header`
   .menu li {
     margin-left: 1rem;
   }
+  @media (max-width: 768px) {
+    
+    justify-content: space-between;
+
+    #logoCentral img {
+      height: 50px;
+    }
+    .midias {
+      display: none;
+    }
+    #terceiradivdoheader {
+      ul {
+        display: flex;
+        align-items: center;
+      }
+      a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 1rem;
+      }
+    }
+  }
 `;
