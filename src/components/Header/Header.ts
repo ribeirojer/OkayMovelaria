@@ -37,6 +37,10 @@ export const Wrapper = styled.header`
   #terceiradivdoheader {
     display: flex;
     justify-content: flex-end;
+    a {
+      color: #ffffff;
+      text-decoration: none;
+    }
   }
   .menu {
     display: flex;
@@ -59,7 +63,6 @@ export const Wrapper = styled.header`
     margin-left: 1rem;
   }
   @media (max-width: 768px) {
-    
     justify-content: space-between;
 
     #logoCentral img {
@@ -74,8 +77,7 @@ export const Wrapper = styled.header`
         align-items: center;
       }
       a {
-        color: #ffffff;
-        text-decoration: none;
+        color: #fcddbc;
         font-size: 1rem;
       }
     }

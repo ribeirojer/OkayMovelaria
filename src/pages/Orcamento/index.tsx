@@ -35,7 +35,7 @@ const Orcamento = (props: Props) => {
           className="instagramnomain"
           target="_blank"
           rel="external"
-          href="https://www.instagram.com/okay.movelaria/"
+          href="https://www.instagram.com/okaymovelaria/"
         >
           <img src={image2} alt="logo Instagram" />
         </a>

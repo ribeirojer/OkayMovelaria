@@ -11,10 +11,7 @@ const Footer = (props: Props) => {
     <Wrapper>
       <div id="logookayrodape">
         <a id="logoCentral" href="index.html">
-          <img
-            src={LogoOkay}
-            alt="logo da okay movelaria"
-          />
+          <img src={LogoOkay} alt="logo da okay movelaria" />
         </a>
       </div>
       <div className="enderecos">
@@ -44,7 +41,7 @@ const Footer = (props: Props) => {
           <a
             target="_blank"
             rel="external"
-            href="https://www.instagram.com/okay.movelaria/"
+            href="https://www.instagram.com/okaymovelaria/"
           >
             <img src={image2} alt="logo Instagram" />
           </a>

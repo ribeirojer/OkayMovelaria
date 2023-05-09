@@ -30,7 +30,7 @@ const Header = (props: Props) => {
           <a
             target="_blank"
             rel="external"
-            href="https://www.instagram.com/okay.movelaria/"
+            href="https://www.instagram.com/okaymovelaria/"
           >
             <img src={LogoInstagram} alt="logo Instagram" />
           </a>

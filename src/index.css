@@ -10,12 +10,13 @@
   -webkit-text-size-adjust: 100%;
 }
 
-* , body {
+*,
+body {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   margin: 0px;
   padding: 0px;
 }
-body {    
-  background-color: #FCDDBC;
+body {
+  background-color: #fcddbc;
 }
